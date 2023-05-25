@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- app heading -->
+        <div class="heading">
+          <h1>WEATHER APP</h1>
+        </div>
+
+        <!-- button section -->
+        <div class="btn-grp">
+          <div id="your-weather">Your Weather</div>
+          <div id="search-weather">Search Weather</div>
+        </div>
+
+        <!-- search seaction -->
+        <form action="submit" id="reset">
+          <input type="text" placeholder="Search for City..." />
+          <button id="search-btn">
+            <img src="./assetes/search.png" width="20" height="20" />
+          </button>
+        </form>
+
+        <!-- loading page -->
+        <div class="loading-page">
+          <img src="./assetes/loading-gif.gif" alt="" width="50" height="50" />
+        </div>
+
+        <!-- content section -->
+        <div class="content">
+          <!-- location access page -->
+          <div class="grant-location">
+            <img src="./assetes/location.png" width="80" height="80" />
+            <h1>Grant Location Access</h1>
+            <h3>Allow Access to get weather information</h3>
+            <button id="grant-access">GRANT ACCESS</button>
+          </div>
+
+          <!-- your location weather page -->
+          <div class="your-weather">
+            <div class="city">
+              <h1 id="city-name"></h1>
+              <div><img src="" id="flag" width="30" height="23" /></div>
+            </div>
+            <div class="weather-img">
+              <p id="weather"></p>
+              <img src="" id="weather-img" width="80" height="80" />
+              <h1 id="temp"></h1>
+            </div>
+            <div class="weather-info">
+              <div class="wind">
+                <img src="./assetes/wind.png" width="60" height="60" />
+                <h3>WINDSPEED</h3>
+                <p id="wind"></p>
+              </div>
+              <div class="humidity">
+                <img src="./assetes/humidity.png" width="50" height="50" />
+                <h3>HUMIDITY</h3>
+                <p id="humidity"></p>
+              </div>
+              <div class="cloud">
+                <img src="./assetes/cloud.png" width="50" height="50" />
+                <h3>CLOUD</h3>
+                <p id="cloud"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
